@@ -1,0 +1,116 @@
+
+
+\tikzset{
+  nonterminal/.style={
+    % The shape:
+    rectangle,
+    % The size:
+    minimum size=6mm,
+    % The border:
+    very thick,
+    draw=red!50!black!50,         % 50% red and 50% black,
+                                  % and that mixed with 50% white
+    % The filling:
+    top color=white,              % a shading that is white at the top...
+    bottom color=red!50!black!20, % and something else at the bottom
+    % Font
+    font=\itshape
+  },
+	mykeyword/.style={
+    % The shape:
+    rounded rectangle,
+    % The size:
+    minimum size=6mm,
+    % The border:
+    very thick,
+    draw=red!50!black!50,         % 50% red and 50% black,
+                                  % and that mixed with 50% white
+    % The filling:
+    top color=white,              % a shading that is white at the top...
+    bottom color=red!50!black!20, % and something else at the bottom
+    % Font
+    font=\itshape
+  },
+  terminal/.style={
+    % The shape:
+    rectangle, rounded corners, 
+    minimum size=6mm,
+    % The rest
+    very thick,draw=black!50,
+    top color=white,bottom color=black!20,
+  %font=\ttfamily
+	},
+	round2/.style={
+    % The shape:
+    circle,
+    minimum size=6mm,
+    % The rest
+    very thick,draw=black!50,
+    top color=white,bottom color=black!20,
+  %font=\ttfamily
+	},
+  skip loop/.style={to path={-- ++(0,#1) -| (\tikztotarget)}}
+}
+
+
+\date{02.04.2015}
+
+\author{A. Rivero - S. Guatierri}
+\title{%
+Intern Experiments
+\\[5mm]
+Using a Stepper Motor
+\\[3mm]
+{\small Hardware: Arduino + Motor Driver + External Electronics}
+}
+\maketitle
+~\vspace{5mm}
+\begin{center}
+{\sf Revision}
+\end{center}
+\vspace{10mm}
+\begin{tabular}{|p{15mm}p{25mm}p{20mm}p{73mm}}
+{\sf Date} &{\sf Author} &{\sf State} &{\sf Reason}\\\hline
+02.04.15 & A. Rivero & V1.0 &...................\\\hline
+
+\end{tabular}
+
+
+
+%\addtocontents{toc}{~\hfill\textbf{Page}\par}
+%\addcontentsline{toc}{chapter}{Contents}
+%\setcounter{tocdepth}{4}		%set the levels of TOC
+%\setcounter{secnumdepth}{4} 	%set the enumeration of TOC
+\tableofcontents
+%\newpage
+
+\forceindent %this command is defined in "Gridsense_SPEC_ISEA_2014nov.tex" file
+
+% alcuni oggetti copia incolla
+% \`{e}
+% \newline
+
+% \begin{itemize}
+%\item Logiche programmabili
+%\item Pin o nodi
+%\item Set
+%\item Costanti
+%\item Macro
+%\item Segnali di entrata e di uscita
+%\end{itemize}
+
+%Define block styles
+ % Modelli per flow chart
+ \tikzstyle{decision} = [diamond, draw, fill=blue!20, text width=4.5em, text badly centered, node distance=3cm, inner sep=0pt]
+\tikzstyle{block} = [rectangle, draw, fill=blue!20, text width=5em, text centered, rounded corners, minimum height=4em]
+ \tikzstyle{line} = [draw, -latex']
+ \tikzstyle{cloud} = [draw, ellipse,fill=red!20, node distance=3cm, minimum height=2em]
+ % Modelli per statement di C
+ \tikzstyle{mandatory_block} = [rectangle, draw, top color=white, bottom color=blue!25, 
+    text width=6em, text centered, rounded corners, drop shadow, minimum height=2em]
+ \tikzstyle{optional_block} = [rectangle, draw, top color=white, bottom color=red!25,
+    text width=6em, text centered, rounded corners, drop shadow, minimum height=2em]
+ \tikzstyle{round}=[circle, thin, draw, fill=red!20, drop shadow, minimum size=2em,inner sep=0pt]
+\tikzstyle{round1}=[circle, thin, drop shadow, minimum size=0em,inner sep=0pt]
+
+
