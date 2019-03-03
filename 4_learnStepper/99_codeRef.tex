@@ -1,0 +1,143 @@
+%******************************************************************************
+\section{Code Reference}
+%******************************************************************************
+This section describe a reference for the code, it is written in the file "99$\_$codeRef.tex", this can be removed from he "main.tex" once the document content is writen in "1$\_$content.tex" file.
+
+%%******************************************************************************
+%\section{Figures and bibliography}
+%%******************************************************************************
+%------------------------------------------------------------------------------
+\subsection{Figures}
+%------------------------------------------------------------------------------
+A figure is included like this:
+
+\begin{figure}[H]
+\begin{center}
+ \includegraphics[scale=0.5]{images/latex}
+\caption{caption is here}
+\label{fig: latex}
+\end{center}
+\end{figure}
+
+
+....and referenced like: figure \ref{fig: latex}. Use a folder named "images" in the project's directory for all the images used. This keeps order with the files.\\
+
+
+
+%------------------------------------------------------------------------------
+\subsection{Reference bibliography}
+%------------------------------------------------------------------------------
+
+To reference from the Bibliography use: for a custom citation \cite{adams1995hitchhiker} or another kind of citation \cite{myRefrenceCreated}, for a paper \cite{4690904}. The bibliography reference information is placed in a file named "bibliography.bib" \\
+
+
+%------------------------------------------------------------------------------
+\subsection{Special characters}
+%------------------------------------------------------------------------------
+Temperature can be written as 35 \degree C, as well as resistance 470 \ohm ....\\
+
+
+
+%%******************************************************************************
+%\section{Links, tables and items}
+%%******************************************************************************
+%------------------------------------------------------------------------------
+\subsection{Links}
+%------------------------------------------------------------------------------
+To know more about links visit this link clicking \href{https://en.wikibooks.org/wiki/LaTeX/Hyperlinks}{here}.
+
+
+%------------------------------------------------------------------------------
+\subsection{Tables}
+%------------------------------------------------------------------------------
+
+Here is how a table is created and how to reference it as: table \ref{tab: USB characteristics}.
+
+%\begin{landscape}
+\begin{table}[h]
+  \centering
+  \begin{tabular}{|l|l|}
+    \hline
+    Product ID & 0x6001 \\
+    \hline
+    Vendor ID & 0x0403 \\
+    \hline
+  \end{tabular}
+  \caption{USB characteristics}
+  \label{tab: USB characteristics}
+\end{table}
+%\end{landscape}
+
+
+
+
+%------------------------------------------------------------------------------
+\subsection{Items}
+%------------------------------------------------------------------------------
+The USB driver must implement the following features: (this is a "itemize" format)
+
+\begin{itemize}
+	\item Device may be opened
+	\item Baud rate configuration
+	\item Parity configuration
+	\item Flow control configuration
+	\item Transmission and reception of data
+\end{itemize}
+
+
+Another way to represent a list is using "Outlines".
+
+\begin{outline}
+	\1 Outline level 1
+		\2 outline level 2
+			\3 outline level 3
+	\1 outline level$_{1}$
+		\2 outline level$_{2}$
+			\3 outline level$_{3}$
+\end{outline}
+
+
+Using multi-columns to represent a list:
+\begin{multicols}{2}
+\begin{itemize}
+	\item Device may be opened
+	\item Baud rate configuration
+	\item Parity configuration
+	\item Flow control configuration
+	\item Transmission and reception of data
+\end{itemize}
+\end{multicols}
+
+
+
+%------------------------------------------------------------------------------
+\subsection{Equations}
+%------------------------------------------------------------------------------
+This is an Equation and it is references as eq. \ref{eq: equation}.
+
+\begin{equation}
+\label{eq: equation}
+	N_{Total\_total} \ [unit] = \frac{Something_{anIndexWritesHere}}{\Delta Var\_x}
+\end{equation}\\
+
+
+
+%------------------------------------------------------------------------------
+\subsection{Karnaugh maps}
+%------------------------------------------------------------------------------
+
+
+\begin{karnaugh-map}
+   \manualterms{1,0,0,1,0,0,0,0,1,1,1,1,0,1,1,1}
+   \implicant{13}{11}
+   \implicant{15}{10}
+   \implicantedge{0}{0}{8}{8}
+   \implicantedge{3}{3}{11}{11}
+\end{karnaugh-map}
+
+
+
+
+
+
+
